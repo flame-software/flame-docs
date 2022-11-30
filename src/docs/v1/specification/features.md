@@ -1,0 +1,4 @@
+---
+title: Feature detail
+sections:
+---

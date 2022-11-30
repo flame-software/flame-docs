@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.5) !important;
+}
+
+.dark hr {
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.5) !important;
+}
+
+li::marker {
+    content: "👉";
+    color: black;
+    font-weight: bold;
+}
+
+.dark li::marker {
+    content: "👉";
+    color: white;
+    font-weight: bold;
+}
+
+.prose a:link {
+    background-color: darkorange;
+    padding: 0.2em 1em;
+    color: black !important;
+    text-decoration: none;
+}
+
+.prose a:link:hover {
+    background-color: orange;
+    text-decoration: none;
+}
