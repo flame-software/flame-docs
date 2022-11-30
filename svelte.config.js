@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-vercel";
 import preprocess from "svelte-preprocess";
 import relativeImages from "mdsvex-relative-images";
 import { mdsvex } from "mdsvex";
