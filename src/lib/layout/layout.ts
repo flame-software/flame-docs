@@ -1,7 +1,9 @@
 interface DocSidebarSection {
 	name: string;
 	order?: number;
+	icon?: string;
 	pages: DocSidebarPage[];
+	url: string;
 }
 
 interface DocSidebarData {
@@ -11,6 +13,7 @@ interface DocSidebarData {
 interface DocSidebarPage {
 	title: string;
 	order?: number;
+	icon?: string;
 	file: string;
 	filename: string;
 	url: string;

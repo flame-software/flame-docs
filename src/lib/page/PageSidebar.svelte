@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+	import Fa from "svelte-fa/src/fa.svelte";
 	import type { DocPageSidebar } from "./page";
 
 	export let data: DocPageSidebar;
@@ -8,12 +10,13 @@
 </script>
 
 <main class="flex flex-col gap-1">
-	<h4 class="text-xl font-bold">Page sections</h4>
 	{#each sections as section}
-		<a
-			href={`#${section}`}
-			class="py-1 px-3 bg-zinc-400 bg-opacity-50 dark:bg-opacity-50 dark:hover:bg-opacity-100 dark:bg-zinc-900 hover:bg-opacity-100"
-			>{section}</a
-		>
+		<a href={`#${section}`} class="py-1 flex gap-3">
+			<Fa
+				icon={faChevronRight}
+				style="font-size: 0.8em; margin: 0.6em 0 0 0;"
+			/>
+			{section}
+		</a>
 	{/each}
 </main>

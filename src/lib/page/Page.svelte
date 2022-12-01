@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Box from "$lib/elements/Box.svelte";
 	import Content from "./Content.svelte";
 	import type { DocPage } from "./page";
 	import PageSidebar from "./PageSidebar.svelte";
@@ -7,7 +8,7 @@
 	export let pagedata: DocPage;
 </script>
 
-<section class="flex gap-5">
+<Box>
 	<article class="col-span-4 flex flex-col gap-5 w-full flex-grow">
 		<Title
 			title={pagedata.title}
@@ -17,8 +18,4 @@
 
 		<Content content={pagedata.content} />
 	</article>
-
-	<sidebar class="w-60">
-		<PageSidebar data={pagedata} />
-	</sidebar>
-</section>
+</Box>

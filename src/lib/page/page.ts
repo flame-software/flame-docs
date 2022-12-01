@@ -10,6 +10,7 @@ interface DocPage {
 	error?: string;
 	order?: number;
 	github_url?: string;
+	icon?: string;
 }
 
 interface DocPageSidebar {
@@ -29,7 +30,7 @@ export async function loadPageData(url: string): Promise<DocPage> {
 	if (!post) return { error: "404" };
 
 	try {
-		const { title, sections, order } = post.metadata;
+		const { title, sections, order, icon } = post.metadata;
 		const content = post.default.render().html;
 
 		return {
@@ -37,6 +38,7 @@ export async function loadPageData(url: string): Promise<DocPage> {
 			content,
 			sections,
 			order,
+			icon,
 		};
 	} catch (e) {
 		return { error: "500" };

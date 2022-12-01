@@ -3,7 +3,7 @@ import type {
 	DocSidebarPage,
 	DocSidebarSection,
 } from "$lib/layout/layout";
-import { loadPageData, type DocPage } from "$lib/page/page";
+import { loadDocPage, loadPageData, type DocPage } from "$lib/page/page";
 import { readdir } from "fs/promises";
 
 const getDirectories = async (source: string) =>
@@ -83,7 +83,7 @@ async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let unsorted_sections: DocSidebarSection[] = [];
 
 	for await (const folder of Object.entries(
-		await getDirectories("src/docs/v1/")
+		await getDirectories("src/docs/" + version + "/")
 	)) {
 		const allPostFiles = await getFiles(
 			"src/docs/" + version + "/" + folder[1]
@@ -92,15 +92,22 @@ async function getSidebarData(version: string): Promise<DocSidebarData> {
 
 		for (const page of Object.entries(allPostFiles)) {
 			const result: DocPage = await loadPageData(
-				`../../docs/v1/${folder[1]}/${page[1]}`
+				`../../docs/${version}/${folder[1]}/${page[1]}`
 			);
 
 			allFilesCorrect.push({
 				title: result.title ?? "",
 				file: page[1],
 				order: result.order,
+				icon: result.icon,
 				filename: page[1].slice(0, -3),
-				url: "/v1/" + folder[1] + "/" + page[1].slice(0, -3),
+				url:
+					"/" +
+					version +
+					"/" +
+					folder[1] +
+					"/" +
+					page[1].slice(0, -3),
 			});
 		}
 
@@ -112,6 +119,8 @@ async function getSidebarData(version: string): Promise<DocSidebarData> {
 		unsorted_sections.push({
 			name: folder[1],
 			order: indexpage ? indexpage.order : undefined,
+			icon: indexpage ? indexpage.icon : undefined,
+			url: "/" + version + "/" + folder[1],
 			pages: [...allFilesCorrect],
 		});
 	}
@@ -127,8 +136,14 @@ async function getSidebarData(version: string): Promise<DocSidebarData> {
 
 export async function load({ params }: any) {
 	const docsidebar: DocSidebarData = await getSidebarData(params.versionslug);
+	const activepage = await loadDocPage(
+		params.versionslug,
+		params.categoryslug,
+		params.slug ?? "index"
+	);
 
 	return {
 		docsidebar,
+		activepage,
 	};
 }

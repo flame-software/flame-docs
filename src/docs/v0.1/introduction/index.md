@@ -5,6 +5,7 @@ sections:
 - Documentation roadmap
 - Join the community
 order: 1
+icon: 📚
 ---
 
 <img src="./assets/indexbanner.png" alt="Flame, where you have control" />

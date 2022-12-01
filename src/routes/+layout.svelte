@@ -11,7 +11,7 @@
 >
 	<Header />
 
-	<article class="container mx-auto py-10 flex-grow">
+	<article class="container mx-auto py-5 lg:py-10 flex-grow">
 		<slot />
 	</article>
 

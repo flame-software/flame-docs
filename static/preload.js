@@ -22,6 +22,7 @@ function getCookie(cname) {
 }
 
 if (getCookie("theme") == "dark") {
-	setCookie("theme", "dark", 100);
 	document.getElementsByTagName("body")[0].classList = "dark";
+} else {
+	document.getElementsByTagName("body")[0].classList = "light";
 }

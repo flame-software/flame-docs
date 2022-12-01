@@ -39,3 +39,12 @@ li::marker {
     background-color: orange;
     text-decoration: none;
 }
+
+.prose-block {
+    display: flex;
+    gap: 2em;
+}
+
+.prose img {
+    border-radius: 1em;
+}
