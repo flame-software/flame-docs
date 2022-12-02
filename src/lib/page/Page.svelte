@@ -7,7 +7,7 @@
 </script>
 
 <Box>
-	<article class="col-span-4 flex flex-col gap-5 w-full flex-grow">
+	<article class="col-span-4 flex flex-col gap-5 w-full flex-grow h-full">
 		<Title
 			title={data.title}
 			last_edited={data.last_edited}

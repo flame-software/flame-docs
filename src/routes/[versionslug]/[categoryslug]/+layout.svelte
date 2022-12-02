@@ -8,7 +8,9 @@
 	// $currentpage = page;
 </script>
 
-<main class="grid w-full grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-5">
+<main
+	class="grid w-full grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-5 flex-grow"
+>
 	<div class="flex col-span-1 w-full p-5">
 		<DocSidebar currentpage={data.page} docsidebar={sidebardata} />
 	</div>

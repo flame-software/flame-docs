@@ -2,7 +2,7 @@
 	import Socials from "./Socials.svelte";
 </script>
 
-<footer class="py-10 bg-white dark:bg-black text-sm shadow-lg">
+<footer class="py-10 bg-white dark:bg-black text-sm shadow-lg z-50">
 	<section
 		class="container flex flex-col lg:flex-row justify-between mx-auto"
 	>
