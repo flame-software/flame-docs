@@ -1,9 +1,10 @@
-import { loadDocPage } from "$lib/page/page";
+import { redirect } from "@sveltejs/kit";
 
 export async function load({ params }: any) {
-	return await loadDocPage(
-		params.versionslug,
-		params.categoryslug,
-		params.slug
-	);
+	if (params.slug == "index") {
+		throw redirect(
+			301,
+			"/" + params.versionslug + "/" + params.categoryslug
+		);
+	}
 }

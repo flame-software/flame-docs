@@ -1,20 +1,30 @@
-import type {
-	DocSidebarData,
-	DocSidebarPage,
-	DocSidebarSection,
-} from "$lib/layout/layout";
+import type { DocSidebarData, DocSidebarSection } from "$lib/layout/layout";
 import { loadDocPage, loadPageData, type DocPage } from "$lib/page/page";
+import { currentpage } from "$lib/state/stores";
+import { error } from "@sveltejs/kit";
 import { readdir } from "fs/promises";
 
-const getDirectories = async (source: string) =>
-	(await readdir(source, { withFileTypes: true }))
-		.filter((dirent) => dirent.isDirectory())
-		.map((dirent) => dirent.name);
+const getDirectories = async (source: string) => {
+	try {
+		let dir = await readdir(source, { withFileTypes: true });
+		return dir
+			.filter((dirent) => dirent.isDirectory())
+			.map((dirent) => dirent.name);
+	} catch (e) {
+		throw error(404, "Not Found");
+	}
+};
 
-const getFiles = async (source: string) =>
-	(await readdir(source, { withFileTypes: true }))
-		.filter((dirent) => dirent.isFile())
-		.map((dirent) => dirent.name);
+const getFiles = async (source: string) => {
+	try {
+		let dir = await readdir(source, { withFileTypes: true });
+		return dir
+			.filter((dirent) => dirent.isFile())
+			.map((dirent) => dirent.name);
+	} catch (e) {
+		throw error(404, "Not Found");
+	}
+};
 
 async function orderSections(
 	sections: DocSidebarSection[]
@@ -50,10 +60,8 @@ async function orderSections(
 	return ordered_sections;
 }
 
-async function orderPages(
-	section: DocSidebarPage[]
-): Promise<DocSidebarPage[]> {
-	let ordered_pages: DocSidebarPage[] = [];
+async function orderPages(section: DocPage[]): Promise<DocPage[]> {
+	let ordered_pages: DocPage[] = [];
 
 	// first only do ordered pages
 	for (let index = 0; index < section.length; index++) {
@@ -81,46 +89,35 @@ async function orderPages(
 
 async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let unsorted_sections: DocSidebarSection[] = [];
+	let directoryFiles;
 
-	for await (const folder of Object.entries(
-		await getDirectories("src/docs/" + version + "/")
-	)) {
+	directoryFiles = await getDirectories("docs/" + version + "/");
+
+	for await (const folder of Object.entries(directoryFiles)) {
 		const allPostFiles = await getFiles(
-			"src/docs/" + version + "/" + folder[1]
+			"docs/" + version + "/" + folder[1]
 		);
-		const allFilesCorrect: DocSidebarPage[] = [];
+		const allFilesCorrect: DocPage[] = [];
 
 		for (const page of Object.entries(allPostFiles)) {
 			const result: DocPage = await loadPageData(
-				`../../docs/${version}/${folder[1]}/${page[1]}`
+				version,
+				folder[1],
+				page[1].slice(0, -3)
 			);
-
-			allFilesCorrect.push({
-				title: result.title ?? "",
-				file: page[1],
-				order: result.order,
-				icon: result.icon,
-				filename: page[1].slice(0, -3),
-				url:
-					"/" +
-					version +
-					"/" +
-					folder[1] +
-					"/" +
-					page[1].slice(0, -3),
-			});
+			allFilesCorrect.push(result);
 		}
 
-		let indexpage: DocSidebarPage | null = null;
+		let indexpage: DocPage | null = null;
 		for (const item of allFilesCorrect) {
-			if (item.filename == "index") indexpage = item;
+			if (item.file == "index.md") indexpage = item;
 		}
 
 		unsorted_sections.push({
 			name: folder[1],
 			order: indexpage ? indexpage.order : undefined,
 			icon: indexpage ? indexpage.icon : undefined,
-			url: "/" + version + "/" + folder[1],
+			url: indexpage ? indexpage.url : "",
 			pages: [...allFilesCorrect],
 		});
 	}
@@ -135,15 +132,16 @@ async function getSidebarData(version: string): Promise<DocSidebarData> {
 }
 
 export async function load({ params }: any) {
-	const docsidebar: DocSidebarData = await getSidebarData(params.versionslug);
-	const activepage = await loadDocPage(
+	const page = await loadDocPage(
 		params.versionslug,
 		params.categoryslug,
 		params.slug ?? "index"
 	);
 
+	const docsidebar: DocSidebarData = await getSidebarData(params.versionslug);
+
 	return {
 		docsidebar,
-		activepage,
+		page,
 	};
 }

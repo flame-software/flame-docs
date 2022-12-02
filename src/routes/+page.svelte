@@ -2,7 +2,7 @@
 	import { browser } from "$app/environment";
 
 	if (browser) {
-		window.location = window.location + "v1/introduction";
+		window.location = window.location + "v0.1/introduction";
 	}
 </script>
 

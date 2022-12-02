@@ -32,7 +32,12 @@ li::marker {
     background-color: darkorange;
     padding: 0.2em 1em;
     color: black !important;
+    border-radius: 0.5em;
     text-decoration: none;
+}
+
+.dark .prose a:link {
+    color: black !important;
 }
 
 .prose a:link:hover {

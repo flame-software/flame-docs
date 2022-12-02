@@ -1,47 +1,45 @@
+import { error } from "@sveltejs/kit";
 import { stat } from "fs/promises";
 
-interface DocPage {
-	meta?: any[];
-	content?: string;
-	title?: string;
-	sections?: string[];
-	category?: string;
-	last_edited?: string;
-	error?: string;
-	order?: number;
-	github_url?: string;
-	icon?: string;
-}
-
-interface DocPageSidebar {
-	sections: string[];
-}
-
-export type { DocPage, DocPageSidebar };
-
-export async function loadPageData(url: string): Promise<DocPage> {
+export async function loadPageData(
+	versionslug: string,
+	categoryslug: string,
+	slug: string
+): Promise<DocPage> {
 	let post = null;
+	const url = `/${versionslug}/${categoryslug}/${slug}`;
+	const fileurl = `../../../docs/${versionslug}/${categoryslug}/${slug}.md`;
+	const srcurl =
+		"docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md";
 
 	try {
-		post = await import(url);
+		post = await import(fileurl);
 	} catch (e) {
-		return { error: "404" };
+		throw error(404, "Not Found");
 	}
-	if (!post) return { error: "404" };
+	if (!post) throw error(404, "Not Found");
 
 	try {
 		const { title, sections, order, icon } = post.metadata;
-		const content = post.default.render().html;
+		const stats = await stat(srcurl);
 
 		return {
 			title,
-			content,
-			sections,
+			content: post.default.render().html,
+			sections: sections ?? [],
 			order,
 			icon,
+			last_edited: stats.mtime.toDateString(),
+			url,
+			srcurl,
+			urlname: slug,
+			file: slug + ".md",
+			fileurl,
+			github_url: `https://github.com/flame-software/flame-docs/tree/main/src/docs/${versionslug}/${categoryslug}/${slug}.md`,
+			category: categoryslug,
 		};
 	} catch (e) {
-		return { error: "500" };
+		throw error(404, "Not Found");
 	}
 }
 
@@ -50,24 +48,7 @@ export async function loadDocPage(
 	categoryslug: string,
 	slug: string
 ): Promise<DocPage> {
-	const result: DocPage = await loadPageData(
-		`../../docs/${versionslug}/${categoryslug}/${slug}.md`
-	);
+	const result: DocPage = await loadPageData(versionslug, categoryslug, slug);
 
-	if (result.error) {
-		return {
-			error: result.error,
-		};
-	}
-
-	let stats = await stat(
-		"src/docs/" + versionslug + "/" + categoryslug + "/index.md"
-	);
-
-	return {
-		...result,
-		last_edited: stats.mtime.toDateString(),
-		github_url: `https://github.com/flame-software/flame-docs/tree/main/src/docs/${versionslug}/${categoryslug}/${slug}.md`,
-		category: categoryslug,
-	};
+	return result;
 }
