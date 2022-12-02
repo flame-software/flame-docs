@@ -20,9 +20,9 @@
 				<a
 					data-sveltekit-preload-data={true}
 					href={section.url}
-					class={`text-xl ${
+					class={`text-lg ${
 						currentpage.category == section.name ? "font-bold" : ""
-					} hover:no-underline group inline-flex gap-3 items-center`}
+					} hover:no-underline group inline-flex mb-1 gap-3 items-center`}
 				>
 					{#if section.icon}
 						<span class="text-2xl">{section.icon}</span>
@@ -36,7 +36,7 @@
 					{#if page.urlname != "index"}
 						<a
 							data-sveltekit-preload-data={true}
-							class="py-1 flex gap-3"
+							class="py-1 flex text-sm gap-3"
 							href={page.url}
 						>
 							{#if page.url == currentpage.url}

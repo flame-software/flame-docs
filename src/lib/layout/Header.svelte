@@ -2,7 +2,9 @@
 	import Socials from "./Socials.svelte";
 </script>
 
-<header class="py-1 bg-black text-white text-lg font-bold z-50">
+<header
+	class="bg-white dark:bg-black shadow-lg text-lg flex items-center font-bold z-50 w-screen fixed h-20"
+>
 	<section class="container mx-auto flex justify-between items-center">
 		<div class="flex gap-1 items-center">
 			<a
@@ -23,10 +25,3 @@
 		</nav>
 	</section>
 </header>
-
-<h5
-	class="bg-orange-500 text-black font-bold text-center py-2 flex items-center gap-3 justify-center z-50"
->
-	This website is an early function-first design, and might change
-	significantly in the future
-</h5>

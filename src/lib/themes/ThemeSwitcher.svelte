@@ -19,6 +19,6 @@
 <button
 	type="none"
 	on:click={switchTheme}
-	class="py-2 px-4"
+	class="py-2 px-4 hover:scale-110 duration-150"
 	bind:this={themeButton}>{browser && $theme == "dark" ? "🌙" : "⛱️"}</button
 >

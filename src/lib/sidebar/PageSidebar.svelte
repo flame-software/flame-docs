@@ -5,7 +5,7 @@
 	export let currentpage: DocPage;
 </script>
 
-<main class="flex flex-col gap-1">
+<main class="flex flex-col gap-1 text-sm">
 	{#each currentpage.sections as section}
 		<a href={`#${section}`} class="py-1 flex gap-3">
 			<Fa

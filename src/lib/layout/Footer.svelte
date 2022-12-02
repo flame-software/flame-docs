@@ -2,7 +2,7 @@
 	import Socials from "./Socials.svelte";
 </script>
 
-<footer class="py-10 bg-black text-white text-sm ">
+<footer class="py-10 bg-white dark:bg-black text-sm shadow-lg">
 	<section
 		class="container flex flex-col lg:flex-row justify-between mx-auto"
 	>
@@ -20,6 +20,5 @@
 				This website collects no information about you and stores no cookies.
 			</h6>
 		</div>
-		<Socials />
 	</section>
 </footer>

@@ -8,7 +8,7 @@
 <div class="flex gap-1 items-center font-bold">
 	<a
 		href="https://flamesoftware.net/"
-		class="lg:inline-flex hidden py-2 px-4 text-sm gap-2 items-center"
+		class="lg:inline-flex hidden font-normal py-2 px-4 text-sm gap-2 items-center"
 	>
 		<Fa icon={faHandPointLeft} />
 		<span>To Main Website</span></a
@@ -17,14 +17,14 @@
 		rel="noreferrer"
 		target="_blank"
 		href="https://github.com/flame-software"
-		class="lg:inline-flex hidden py-2 px-4 gap-2 items-center text-xl"
+		class="lg:inline-flex hover:scale-110 duration-150 hidden py-2 px-4 gap-2 items-center text-xl"
 		><Fa icon={faGithub} /></a
 	>
 	<a
 		rel="noreferrer"
 		target="_blank"
 		href="https://discord.gg/Z6qcNckczz"
-		class="lg:inline-flex hidden py-2 px-4 gap-2 items-center text-xl"
+		class="lg:inline-flex hover:scale-110 duration-150 hidden py-2 px-4 gap-2 items-center text-xl"
 		><Fa icon={faDiscord} /></a
 	>
 	<span class="text-xl"><ThemeSwitcher /></span>

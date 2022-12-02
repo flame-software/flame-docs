@@ -90,15 +90,6 @@ export async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let unsorted_sections: DocSidebarSection[] = [];
 	let directoryFiles;
 
-	try {
-		let dir = await readdir(path.resolve(process.cwd(), "docs"), {
-			withFileTypes: true,
-		});
-		console.log(dir);
-	} catch (e) {
-		console.log(e);
-	}
-
 	directoryFiles = await getDirectories(
 		path.resolve(process.cwd(), "docs", version)
 	);
