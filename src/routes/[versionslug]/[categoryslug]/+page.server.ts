@@ -1,5 +1,4 @@
 import { loadDocPage } from "$lib/page/page";
-import { getSidebarData } from "$lib/sidebar/sidebar";
 
 export async function load({ params }: any) {
 	const page = await loadDocPage(
