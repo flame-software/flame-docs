@@ -1,6 +1,5 @@
 <script lang="ts">
-	import PageSidebar from "$lib/page/PageSidebar.svelte";
-	import { currentpage } from "$lib/state/stores";
+	import PageSidebar from "$lib/sidebar/PageSidebar.svelte";
 	import { capitalizeFirstLetter } from "$lib/utils/names";
 	import {
 		faChevronRight,
@@ -9,6 +8,7 @@
 	import Fa from "svelte-fa/src/fa.svelte";
 
 	export let docsidebar: DocSidebarData;
+	export let currentpage: DocPage;
 </script>
 
 <sidebar class="w-full relative">
@@ -20,37 +20,38 @@
 				<a
 					href={section.url}
 					class={`text-xl ${
-						$currentpage.category == section.name ? "font-bold" : ""
+						currentpage.category == section.name ? "font-bold" : ""
 					} hover:no-underline group inline-flex gap-3 items-center`}
 				>
 					{#if section.icon}
 						<span class="text-2xl">{section.icon}</span>
 					{/if}
 					<span class="hover:underline"
-						>{capitalizeFirstLetter(section.name)}</span
+						>{capitalizeFirstLetter(section.name)} ({section.pages
+							.length})</span
 					></a
 				>
 				{#each section.pages as page}
 					{#if page.urlname != "index"}
 						<a class="py-1 flex gap-3" href={page.url}>
-							{#if page.urlname == $currentpage.urlname}
+							{#if page.url == currentpage.url}
 								<Fa
 									icon={faChevronDown}
 									style="font-size: 0.8em; margin: 0.6em 0 0 0;"
 								/>
-								<b>{page.title}</b>
+								<b>{page.title} ({page.sections.length})</b>
 							{:else}
 								<Fa
 									icon={faChevronRight}
 									style="font-size: 0.8em; margin: 0.6em 0 0 0;"
 								/>
-								<p>{page.title}</p>
+								<p>{page.title} ({page.sections.length})</p>
 							{/if}
 						</a>
 					{/if}
-					{#if page.url == $currentpage.url}
+					{#if page.url == currentpage.url}
 						<div class="ml-5">
-							<PageSidebar />
+							<PageSidebar {currentpage} />
 						</div>
 					{/if}
 				{/each}

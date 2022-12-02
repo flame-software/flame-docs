@@ -1,4 +1,4 @@
 ---
-title: Explaining Flame
+title: 🔍 Explaining Flame
 sections:
 ---

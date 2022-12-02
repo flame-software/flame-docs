@@ -1,5 +1,5 @@
 ---
-title: Feature detail
+title: 🧑‍💻 Feature detail
 sections:
 - Friendships & Groups
 ---

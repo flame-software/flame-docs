@@ -2,8 +2,6 @@ import { browser } from "$app/environment";
 import { getCookie, setCookie } from "$lib/utils/cookies";
 import { writable } from "svelte/store";
 
-export const currentpage = writable(null);
-
 export const theme = writable(browser ? getCookie("theme") : "light");
 
 theme.subscribe((value) => {

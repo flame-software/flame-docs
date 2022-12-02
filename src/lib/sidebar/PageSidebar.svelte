@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { currentpage } from "$lib/state/stores";
 	import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 	import Fa from "svelte-fa/src/fa.svelte";
+
+	export let currentpage: DocPage;
 </script>
 
 <main class="flex flex-col gap-1">
-	{#each $currentpage.sections as section}
+	{#each currentpage.sections as section}
 		<a href={`#${section}`} class="py-1 flex gap-3">
 			<Fa
 				icon={faChevronRight}

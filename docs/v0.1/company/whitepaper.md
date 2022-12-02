@@ -1,5 +1,5 @@
 ---
-title: Flame Whitepaper
+title: 📃 Flame Whitepaper
 sections:
 - Where you have control
 - Introduction
@@ -11,7 +11,7 @@ sections:
 - Flame's solution
 ---
 
-<img src="./assets/whitepaper.jpg" /> <a name="{sections[0]}"></a>
+<a name="{sections[0]}"></a> <img src="./assets/whitepaper.jpg" />
 
 # {sections[1]} <a name="{sections[1]}"></a>
 

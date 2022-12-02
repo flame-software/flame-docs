@@ -1,5 +1,5 @@
 ---
-title: About Flame Software
+title: 📕 About Flame Software
 sections:
 - Core Concept
 - Cool Tech Jargon

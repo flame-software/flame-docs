@@ -1,3 +1,5 @@
+import { loadDocPage } from "$lib/page/page";
+import { getSidebarData } from "$lib/sidebar/sidebar";
 import { redirect } from "@sveltejs/kit";
 
 export async function load({ params }: any) {
@@ -7,4 +9,12 @@ export async function load({ params }: any) {
 			"/" + params.versionslug + "/" + params.categoryslug
 		);
 	}
+
+	const page = await loadDocPage(
+		params.versionslug,
+		params.categoryslug,
+		params.slug
+	);
+
+	return { page };
 }

@@ -7,7 +7,7 @@
 		{$page.status}: {$page.error.message}
 	</h1>
 	<a
-		href="/v1/introduction"
+		href="/v0.1/introduction"
 		class="text-orange-500 underline text-4xl font-bold text-center"
 		>Go Back</a
 	>

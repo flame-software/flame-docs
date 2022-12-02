@@ -1,5 +1,5 @@
 ---
-title: Technical details on Flame
+title: 🌐 Network spec
 sections:
 ---
 
