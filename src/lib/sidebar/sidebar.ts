@@ -105,7 +105,7 @@ export async function getSidebarData(version: string): Promise<DocSidebarData> {
 
 	for await (const folder of Object.entries(directoryFiles)) {
 		const allPostFiles = await getFiles(
-			path.resolve(process.cwd(), "static", "docs", version, folder[1])
+			path.resolve(process.cwd(), "public", "docs", version, folder[1])
 		);
 		const allFilesCorrect: DocPage[] = [];
 
