@@ -32,7 +32,6 @@ interface DocPage {
 	urlname: string;
 	file: string;
 	fileurl: string;
-	srcurl: string;
 }
 
 interface DocSidebarSection {

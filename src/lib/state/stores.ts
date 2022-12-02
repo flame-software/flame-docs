@@ -8,5 +8,7 @@ theme.subscribe((value) => {
 	if (browser) {
 		setCookie("theme", value, 100);
 		document.getElementsByTagName("body")[0].classList = value;
+		document.getElementById("code").href =
+			"/themes/prism-material-" + value + ".css";
 	}
 });

@@ -1,7 +1,7 @@
-import type { DocSidebarData, DocSidebarSection } from "$lib/layout/layout";
-import { loadDocPage, loadPageData } from "$lib/page/page";
+import { loadPageData } from "$lib/page/page";
 import { error } from "@sveltejs/kit";
 import { readdir } from "fs/promises";
+import path from "path";
 
 const getDirectories = async (source: string) => {
 	try {
@@ -10,7 +10,7 @@ const getDirectories = async (source: string) => {
 			.filter((dirent) => dirent.isDirectory())
 			.map((dirent) => dirent.name);
 	} catch (e) {
-		throw error(404, "Not Found");
+		throw error(404, e + " VIA GETDIRECTORIES");
 	}
 };
 
@@ -21,7 +21,7 @@ const getFiles = async (source: string) => {
 			.filter((dirent) => dirent.isFile())
 			.map((dirent) => dirent.name);
 	} catch (e) {
-		throw error(404, "Not Found");
+		throw error(404, e + " VIA GETFILES");
 	}
 };
 
@@ -90,11 +90,29 @@ export async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let unsorted_sections: DocSidebarSection[] = [];
 	let directoryFiles;
 
-	directoryFiles = await getDirectories("docs/" + version + "/");
+	// try {
+	// 	let dir = await readdir(path.join(process.cwd(), "src/routes/docs/"), {
+	// 		withFileTypes: true,
+	// 	});
+	// 	console.log(dir);
+	// } catch (e) {
+	// 	console.log(e);
+	// }
+
+	directoryFiles = await getDirectories(
+		path.resolve(process.cwd(), "src", "routes", "docs", version)
+	);
 
 	for await (const folder of Object.entries(directoryFiles)) {
 		const allPostFiles = await getFiles(
-			"docs/" + version + "/" + folder[1]
+			path.resolve(
+				process.cwd(),
+				"src",
+				"routes",
+				"docs",
+				version,
+				folder[1]
+			)
 		);
 		const allFilesCorrect: DocPage[] = [];
 

@@ -18,6 +18,7 @@
 		{#each Object.entries(docsidebar.sections) as [key, section]}
 			<div class="flex flex-col gap-1">
 				<a
+					data-sveltekit-preload-data={true}
 					href={section.url}
 					class={`text-xl ${
 						currentpage.category == section.name ? "font-bold" : ""
@@ -28,12 +29,16 @@
 					{/if}
 					<span class="hover:underline"
 						>{capitalizeFirstLetter(section.name)} ({section.pages
-							.length})</span
+							.length - 1})</span
 					></a
 				>
 				{#each section.pages as page}
 					{#if page.urlname != "index"}
-						<a class="py-1 flex gap-3" href={page.url}>
+						<a
+							data-sveltekit-preload-data={true}
+							class="py-1 flex gap-3"
+							href={page.url}
+						>
 							{#if page.url == currentpage.url}
 								<Fa
 									icon={faChevronDown}

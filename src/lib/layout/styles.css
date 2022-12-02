@@ -37,7 +37,7 @@ li::marker {
 }
 
 .dark .prose a:link {
-    color: black !important;
+    color: white !important;
 }
 
 .prose a:link:hover {
