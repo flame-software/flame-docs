@@ -13,7 +13,7 @@
 
 <sidebar class="w-full relative">
 	<section
-		class="lg:fixed w-[90vw] lg:w-60 h-80 lg:h-[80vh] overflow-scroll flex flex-col gap-10"
+		class="lg:fixed w-[90vw] lg:w-60 h-80 lg:h-[80vh] flex flex-col gap-10"
 	>
 		{#each Object.entries(docsidebar.sections) as [key, section]}
 			<div class="flex flex-col gap-1">
