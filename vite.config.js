@@ -5,7 +5,7 @@ const config = {
 	plugins: [sveltekit()],
 	server: {
 		fs: {
-			allow: ["docs/**", "docs"],
+			allow: ["public/**", "public"],
 		},
 	},
 };

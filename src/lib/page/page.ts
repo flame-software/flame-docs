@@ -11,13 +11,7 @@ export async function loadPageData(
 	const url = `/${versionslug}/${categoryslug}/${slug}`;
 	const fileurl = path.resolve(
 		process.cwd(),
-		"src/routes/docs/" +
-			versionslug +
-			"/" +
-			categoryslug +
-			"/" +
-			slug +
-			".md"
+		"public/docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md"
 	);
 
 	try {
