@@ -91,7 +91,7 @@ export async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let directoryFiles;
 
 	try {
-		let dir = await readdir(path.resolve(process.cwd(), "public", "docs"), {
+		let dir = await readdir(path.resolve(process.cwd(), "docs"), {
 			withFileTypes: true,
 		});
 		console.log(dir);
@@ -100,12 +100,12 @@ export async function getSidebarData(version: string): Promise<DocSidebarData> {
 	}
 
 	directoryFiles = await getDirectories(
-		path.resolve(process.cwd(), "public", "docs", version)
+		path.resolve(process.cwd(), "docs", version)
 	);
 
 	for await (const folder of Object.entries(directoryFiles)) {
 		const allPostFiles = await getFiles(
-			path.resolve(process.cwd(), "public", "docs", version, folder[1])
+			path.resolve(process.cwd(), "docs", version, folder[1])
 		);
 		const allFilesCorrect: DocPage[] = [];
 
