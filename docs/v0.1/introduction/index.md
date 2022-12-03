@@ -8,7 +8,7 @@ order: 1
 icon: 📚
 ---
 
-This website will be the place to find everything about Flame and Flame Software, such as technical details, logical explanations, research, company information, product roadmaps, survey results and more.
+### The Flame documentation is the place to find all information about Flame and Flame Software. It does not only contain technical specifications for our product and protocols, but also explanations and introductions to Flame, roadmaps and plans, research conclusions, company information and everything else. You may fork this repository and PR us suggested changes on Github, or join our Discord server and talk with us if you have any questions.
 
 <img src="./assets/indexbanner.png" alt="Flame, where you have control" />
 
@@ -16,7 +16,7 @@ This website will be the place to find everything about Flame and Flame Software
 
 <span class="links">
 
-[👪 Flame Whitepaper](/v0.1/company/whitepaper)
+[📄 Flame Whitepaper](/v0.1/company/whitepaper)
 [Flame ❤ the environment](/v0.1/company/environment)
 [📕 About Flame Software](/v0.1/company/about)
 

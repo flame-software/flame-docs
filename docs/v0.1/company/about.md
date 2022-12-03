@@ -25,13 +25,13 @@ Interested in our mission? <a href="/v0.1/company/whitepaper">Read our Whitepape
 
 ---
 
-# **Meet Flame's Team:** <a name="Meet Flame's Team"></a>
+# **Meet Flame's Team** <a name="Meet Flame's Team"></a>
 
-<div style="display: flex; gap: 2em;">
+<div style="display: flex; flex-wrap: wrap; gap: 2em;">
 
 <img src="./assets/mid.jpg" style="width: 300px; height: 300px;" />
 
-<div>
+<div >
 
 ## Pascal van Ginkel, Head of Technology
 ### Discord: Mid#0001 - Twitter: @midblep
@@ -44,7 +44,7 @@ Hey I'm Mid, Head of Technology at Flame. That means I am concerned with the tec
 
 </div>
 
-<div style="display: flex; gap: 2em;">
+<div style="display: flex; flex-wrap: wrap; gap: 2em;">
 
 <img src="./assets/thom.png" style="width: 300px; height: 300px;" />
 

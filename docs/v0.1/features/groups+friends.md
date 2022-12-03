@@ -1,7 +1,7 @@
 ---
 title: 🤝 Friendships & Groups
 sections:
-- Friendships & Groups
+- Friendships, how do they work in Flame?
 ---
 
 ```js
@@ -10,7 +10,7 @@ NOTE:
 ! Blog url: https://github.com/orgs/flame-software/discussions/12
 ```
 
-# Friendships, how do they work in Flame? <a name="Friendships & Groups"></a>
+# Friendships, how do they work in Flame? <a name="Friendships, how do they work in Flame?"></a>
 
 Our platform stems around giving you the power to decide, and thus we don't think you should be limited to grouping the people you interact with in batches of ''Friend'', ''No Friend'' or ''Blocked''. That might work in most cases, and will be the default standard for any user, but that doesn't mean everyone wants it that way. Maybe you want a group of besties, or a group for business contacts, or a group of folks part of a party.
 "Say, this sound awfully a lot like just asking friends to join a server"
