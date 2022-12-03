@@ -1,6 +1,6 @@
 <script>
 	import { browser } from "$app/environment";
-	import SvelteSeo from "svelte-seo/types/SvelteSeo";
+	import SvelteSeo from "svelte-seo";
 
 	if (browser) {
 		window.location = window.location + "v0.1/introduction";
