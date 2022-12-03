@@ -24,7 +24,7 @@
 		headline: page.title,
 		image: [
 			import.meta.env.VITE_APP_URL + findFirstImageUrl(page.content) ??
-				"",
+				"/indexbanner.png",
 		],
 		datePublished: page.last_edited,
 		dateModified: page.last_edited,
@@ -33,7 +33,7 @@
 			name: "Flame Software",
 			logo: {
 				"@type": "ImageObject",
-				url: import.meta.env.VITE_APP_URL + "/logo.png",
+				url: import.meta.env.VITE_APP_URL + "/indexbanner.png",
 			},
 		},
 	}}
@@ -50,7 +50,7 @@
 			.substring(0, 150),
 		image:
 			import.meta.env.VITE_APP_URL + findFirstImageUrl(page.content) ??
-			"",
+			"/indexbanner.png",
 		imageAlt: "Article thumbnail",
 	}}
 	openGraph={{
@@ -69,7 +69,7 @@
 			{
 				url:
 					import.meta.env.VITE_APP_URL +
-						findFirstImageUrl(page.content) ?? "",
+						findFirstImageUrl(page.content) ?? "/indexbanner.png",
 				alt: "Article thumbnail",
 			},
 		],
