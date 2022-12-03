@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
 
 a:hover {
     text-decoration: underline;
@@ -28,14 +34,64 @@ li::marker {
     font-weight: bold;
 }
 
-.prose a:link {
-    background-color: darkorange;
-    padding: 0.2em 1em;
+.prose .links a[href] {
+    background-image: linear-gradient(to top right, #FF660C, rgb(254, 77, 14));
+    opacity: 85%;
+    letter-spacing: 0.06em;
+    word-spacing: 0.1em;
+    padding: 0.4em 2em;
+    font-size: 1.2em;
     color: black !important;
+    border-radius: 0.5em;
+    margin: 5px 5px 10px 5px;
+    font-weight: bold;
     text-decoration: none;
+    transition-duration: 150ms;
+    display: inline-block;
 }
 
-.prose a:link:hover {
-    background-color: orange;
+.dark .prose .links a[href] {
+    color: white !important;
+}
+
+.prose .links a[href]:hover {
+    background-image: linear-gradient(to top right, #ff711e, rgb(254, 77, 14));
+    opacity: 100%;
     text-decoration: none;
+    transition-duration: 150ms;
+    /* margin: 0px 5px 10px 5px; */
+    box-shadow: 5px 5px rgba(173, 49, 4, 0.5);
+}
+
+.prose-block {
+    display: flex;
+    gap: 2em;
+}
+
+.prose img {
+    border-radius: 1em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #919393;
+    width: 4px;
+    border-radius: 2em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgba(50,100,255, 0.5);
 }

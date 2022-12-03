@@ -1,5 +1,5 @@
 <!-- +layout.svelte -->
-<script>
+<script lang="ts">
 	import Footer from "$lib/layout/Footer.svelte";
 	import Header from "$lib/layout/Header.svelte";
 	import "$lib/layout/styles.css";
@@ -11,7 +11,7 @@
 >
 	<Header />
 
-	<article class="container mx-auto py-10 flex-grow">
+	<article class="container h-full mx-auto mt-20 flex-grow">
 		<slot />
 	</article>
 

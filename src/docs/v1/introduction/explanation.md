@@ -1,4 +1,0 @@
----
-title: Explaining Flame
-sections:
----

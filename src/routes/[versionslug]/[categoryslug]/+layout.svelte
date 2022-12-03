@@ -1,21 +1,22 @@
 <script lang="ts">
-	import Box from "$lib/elements/Box.svelte";
-	import DocSidebar from "$lib/layout/DocSidebar.svelte";
-	import type { DocSidebarData } from "$lib/layout/layout";
+	import DocSidebar from "$lib/sidebar/DocSidebar.svelte";
+	// import { currentpage } from "$lib/state/stores";
 
 	export let data: any;
 	let sidebardata: DocSidebarData = data.docsidebar;
+	// let page: DocPage = data.page;
+	// $currentpage = page;
 </script>
 
-<main class="grid w-full grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-5">
-	<div class="flex col-span-1 w-full">
-		<Box>
-			<DocSidebar docsidebar={sidebardata} />
-		</Box>
+<main
+	class="flex h-full flex-col lg:flex-row flex-grow items-stretch w-full gap-5"
+>
+	<div class="flex w-80 p-5">
+		<DocSidebar currentpage={data.page} docsidebar={sidebardata} />
 	</div>
-	<article class="col-span-1 md:col-span-3 lg:col-span-4">
-		<Box>
-			<slot />
-		</Box>
+	<article
+		class="h-full min-h-screen w-full flex-grow border-r-4 dark:border-orange-500 border-orange-600 border-opacity-50"
+	>
+		<slot />
 	</article>
 </main>

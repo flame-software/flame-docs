@@ -1,5 +1,13 @@
 import { loadDocPage } from "$lib/page/page";
 
 export async function load({ params }: any) {
-	return await loadDocPage(params.versionslug, params.categoryslug, "index");
+	const page = await loadDocPage(
+		params.versionslug,
+		params.categoryslug,
+		params.slug ?? "index"
+	);
+
+	return {
+		page,
+	};
 }

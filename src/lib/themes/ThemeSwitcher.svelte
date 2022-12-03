@@ -1,24 +1,24 @@
 <script lang="ts">
 	import { browser } from "$app/environment";
-	import { getCookie, setCookie } from "$lib/utils/cookies";
-	import { onMount } from "svelte";
+	import { theme } from "$lib/state/stores";
 
 	let themeButton: HTMLElement;
 
 	function switchTheme() {
-		let theme = getCookie("theme");
-		if (theme == "light") {
-			setCookie("theme", "dark", 100);
+		console.log($theme);
+		if ($theme == "light") {
+			theme.set("dark");
 			themeButton.innerHTML = "🌙";
-			document.getElementsByTagName("body")[0].classList = "dark";
 		} else {
-			setCookie("theme", "light", 100);
+			theme.set("light");
 			themeButton.innerHTML = "⛱️";
-			document.getElementsByTagName("body")[0].classList = "light";
 		}
 	}
 </script>
 
-<button on:click={switchTheme} bind:this={themeButton} id="themeButton"
-	>{browser && getCookie("theme") == "dark" ? "🌙" : "⛱️"}</button
+<button
+	type="none"
+	on:click={switchTheme}
+	class="py-2 px-4 hover:scale-110 duration-150"
+	bind:this={themeButton}>{browser && $theme == "dark" ? "🌙" : "⛱️"}</button
 >

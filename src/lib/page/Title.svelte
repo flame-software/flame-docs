@@ -8,8 +8,8 @@
 </script>
 
 <div class="flex flex-col gap-1">
-	<h1 class="font-bold text-4xl">{title}</h1>
-	<div class="flex gap-5 flex-wrap">
+	<h1 class="font-bold text-3xl lg:text-4xl">{title}</h1>
+	<div class="flex gap-1 flex-col lg:flex-row lg:gap-5 flex-wrap">
 		<h3>Last edited: {last_edited}</h3>
 		<a
 			href={github_url}

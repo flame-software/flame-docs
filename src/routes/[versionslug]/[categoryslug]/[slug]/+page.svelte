@@ -1,19 +1,15 @@
 <script lang="ts">
-	import type { DocPage } from "$lib/page/page";
-	import Page from "$lib/page/Page.svelte";
 	import { capitalizeFirstLetter } from "$lib/utils/names";
+	import Page from "$lib/page/Page.svelte";
 
-	export let data: DocPage;
+	export let data: any;
 </script>
 
 <svelte:head>
 	<title
-		>Flame Docs - {capitalizeFirstLetter(data.category)} - {data.title}</title
+		>Flame Docs - {capitalizeFirstLetter(data.page.category)} - {data.page
+			.title}</title
 	>
 </svelte:head>
 
-{#if !data.error}
-	<Page pagedata={data} />
-{:else}
-	{data.error}
-{/if}
+<Page data={data.page} />

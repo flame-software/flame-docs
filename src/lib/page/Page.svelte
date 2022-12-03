@@ -1,24 +1,19 @@
 <script lang="ts">
+	import Box from "$lib/elements/Box.svelte";
 	import Content from "./Content.svelte";
-	import type { DocPage } from "./page";
-	import PageSidebar from "./PageSidebar.svelte";
 	import Title from "./Title.svelte";
 
-	export let pagedata: DocPage;
+	export let data: DocPage;
 </script>
 
-<section class="flex gap-5">
-	<article class="col-span-4 flex flex-col gap-5 w-full flex-grow">
+<Box>
+	<article class="col-span-4 flex flex-col gap-5 w-full flex-grow h-full">
 		<Title
-			title={pagedata.title}
-			last_edited={pagedata.last_edited}
-			github_url={pagedata.github_url}
+			title={data.title}
+			last_edited={data.last_edited}
+			github_url={data.github_url}
 		/>
 
-		<Content content={pagedata.content} />
+		<Content content={data.content} />
 	</article>
-
-	<sidebar class="w-60">
-		<PageSidebar data={pagedata} />
-	</sidebar>
-</section>
+</Box>
