@@ -1,22 +1,16 @@
 ---
-title: 🧑‍💻 Feature detail
+title: 🤝 Friendships & Groups
 sections:
 - Friendships & Groups
 ---
 
-## Friendships & Groups <a name="Friendships & Groups"></a>
-#### Good Tuesday fellow developers, gamers and nerds!
+```js
+NOTE:
+! This is an excerpt from one of our blogposts and will be rewritten to fit the style of a documentation.
+! Blog url: https://github.com/orgs/flame-software/discussions/12
+```
 
-Welcome to our first Feature Highlight, a weekly blogpost series that is dedicated to showing off our ideas and designs for what Flame will be able to do. This week is all about the relationships you have on Flame, like friendships and blocked users. They work just the way you want them to, but for the experts among us they are able to do much more than any other platform lets you.
-But first we want to highlight our Discord server!
-
-We have been running events and giveaways there and are currently creating a Minecraft server as well. We will also be doing a game night this Friday at 8PM CET time, so be there or be square.
-
-Beyond creating an amazing product, we want to create an amazing community that shares our vision. All of the team are huge gamers, so what better way to get along than to play games?
-
-Invite link: https://discord.gg/Z6qcNckczz
-
-#### Friendships, how do they work in Flame?
+# Friendships, how do they work in Flame? <a name="Friendships & Groups"></a>
 
 Our platform stems around giving you the power to decide, and thus we don't think you should be limited to grouping the people you interact with in batches of ''Friend'', ''No Friend'' or ''Blocked''. That might work in most cases, and will be the default standard for any user, but that doesn't mean everyone wants it that way. Maybe you want a group of besties, or a group for business contacts, or a group of folks part of a party.
 "Say, this sound awfully a lot like just asking friends to join a server"
@@ -41,12 +35,12 @@ Wow, that's a lot! But actually these rules just define the common patterns any 
     Control what parts of your profile are visible to regular friends, and only allowing good friends to see every detail.
     And everything else you might consider!
 
-#### Wow, that's a lot
-
 As you can see, this is powerful stuff for the real power users. Many might not need this kind of extensive customisability, but it's all about the choice if you need it at Flame.
 
-Do you like this structure, or do you have some critique? We'd love to hear it all! You can post a comment on the GitHub page, which you can find by pressing the link below this post, or join our Discord server here >> https://discord.gg/Z6qcNckczz
+Do you like this structure, or do you have some critique? We'd love to hear it all!
 
-Want to help us out here at Flame? We're open to many different positions, so feel free to contact me personally on Discord at Mid#0001.
+<span class="links">
 
-Next week we'll be back with another Feature Highlight, and we'll share some visuals too. Till then!
+[👪 Join the Discord Server](https://discord.gg/Z6qcNckczz)
+
+</span>

@@ -1,21 +1,29 @@
 ---
 title: 📃 Flame Whitepaper
 sections:
-- Where you have control
 - Introduction
-- Traditional online media
+- History of communication online
+- Current state of the industry
 - The problem
+- The solution
 - A connected network
-- A private network
-- A network full of potential
-- Flame's solution
+- A powerful network
+- A permanent network
+- Conclusion
 ---
 
-<a name="{sections[0]}"></a> <img src="./assets/whitepaper.jpg" />
+```js
+NOTE:
+! This whitepaper is not finished.
+```
+
+<img src="./assets/whitepaper.jpg" />
+
+# {sections[1]} <a name="{sections[0]}"></a>
+
+---
 
 # {sections[1]} <a name="{sections[1]}"></a>
-
-The internet is vast and complicated. It has brought us together, but it also has divided us more than ever. Those who do not know how it works are left behind.
 
 ---
 
@@ -41,5 +49,7 @@ The internet is vast and complicated. It has brought us together, but it also ha
 
 # {sections[7]} <a name="{sections[7]}"></a>
 
+---
 
-<img src="./assets/whitepaper_structure.png" />
+# {sections[8]} <a name="{sections[8]}"></a>
+

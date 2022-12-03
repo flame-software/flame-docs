@@ -1,8 +1,9 @@
 ---
 title: Flame ❤ the environment
 sections:
-- Largest environmental impact from SaaS
+- Largest environmental impacts from SaaS
 - Mitigation possibilities
 - Flame's policy and promise
-- User tools
+- Empowering user tools
+- Motivating third parties
 ---

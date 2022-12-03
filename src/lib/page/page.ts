@@ -36,7 +36,7 @@ export async function loadPageData(
 			urlname: slug,
 			file: slug + ".md",
 			fileurl,
-			github_url: `https://github.com/flame-software/flame-docs/tree/main/public/docs/${versionslug}/${categoryslug}/${slug}.md`,
+			github_url: `https://github.com/flame-software/flame-docs/tree/main/docs/${versionslug}/${categoryslug}/${slug}.md`,
 			category: categoryslug,
 		};
 	} catch (e) {

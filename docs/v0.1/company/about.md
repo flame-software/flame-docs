@@ -1,58 +1,78 @@
 ---
 title: 📕 About Flame Software
 sections:
-- Core Concept
-- Cool Tech Jargon
-- Meet The Team
+- Flame is on a mission
+- Where to start
+- Meet Flame's Team
 - Social Info
 ---
 
-## **Core Concept:** <a name="Core Concept"></a>
+<img src="./assets/logos.png" />
 
-Flame Software is building a platform that is committed to give you more power and control over your social life online by uniting the social media space and letting you customise it to your heart's content.
-If you wanna learn more, check out our flame channel below this channel for a full explanation!
+# Flame is on a mission <a name="{sections[0]}"></a>
 
-## **Cool Tech Jargon:** <a name="Cool Tech Jargon"></a>
+Flame Software VOF is a Dutch registered company founded in 2022 by two Computer Engineering students with the vision to revolutionize online communications.
 
-Our mission is to progress the internet to create a more united digital world that is fair to everyone, where you have the freedom to do with your data what you want and connect to the network with your own federated servers.
-Our new IRC-inspired open source protocol will assume nothing about how communication by humans online should be structured and allows for any type and interpretation of it by any party that connects to it.
-That means Flame will replace Forums, Chat apps, Social medias, Blogs, Galleries, Q&A sites, Newsfeeds, Livestreams, Video content, Podcasts and any other structuring of online communication you can think of!
-For a deeper technical look on how we plan to achieve all this, check out our deep-dive channel, ask us about it in the forums, or attend one of our Q&A session events.
+We believe the open mindset of technologies like Email, IRC and RSS need a return. They shaped the internet, and made it a world of the free. But big tech like Discord, Google and Facebook are privatising our beautiful world-wide network of human communication, forcing their hand on what you're allowed to do.
 
-## **Meet The Team:** <a name="Meet The Team"></a>
+We dream of an internet where people have the freedom to make their own independent decisions without the risk of losing their ability to contact everyone who is important to them. An internet where you have the control to make it *your* internet.
 
-**@Mid#0001 - Head of Technology**
+---
 
-Hey I'm Mid, I am an equal share director with Thom and founded the concept of Flame. I have nearly a decade of experience with web development and 4+ years of experience with chat-app related development. I am currently working on Flame as a University project, I study Software Engineering at the Saxion University.
-I am mainly concerned with the technical structure of Flame Software and its products such as server architecture, tech stack, code conventions, pull requests, code reviews, github management, community management of open source projects, protocol spec, documentations, and developing Flame's products through programming.
+# Where to start <a name="Where to start"></a>
 
-**@Thommunist#7823 - Head of Operations**
+Interested in our mission? <a href="/v0.1/company/whitepaper">Read our Whitepaper</a> containing our solution and plan on how we will carry it out. You can also come and <a href="https://discord.gg/Z6qcNckczz">join our Discord server</a> where you will be notified of updates.
+
+---
+
+# **Meet Flame's Team:** <a name="Meet Flame's Team"></a>
+
+<div style="display: flex; gap: 2em;">
+
+<img src="./assets/mid.jpg" style="width: 300px; height: 300px;" />
+
+<div>
+
+## Pascal van Ginkel, Head of Technology
+### Discord: Mid#0001 - Twitter: @midblep
+
+<hr style="margin: 20px 0;"/>
+
+Hey I'm Mid, Head of Technology at Flame. That means I am concerned with the technical structure of Flame Software and its products such as server architecture, tech stack, code conventions, pull requests, code reviews, protocol development, documentation, and developing Flame's codebases. I have nearly a decade of experience with web development and 4+ years of experience with chat-app related development.
+
+</div>
+
+</div>
+
+<div style="display: flex; gap: 2em;">
+
+<img src="./assets/thom.png" style="width: 300px; height: 300px;" />
+
+<div>
+
+## Thom Sandbrink, Head of Operations
+### Discord: Thommunist#7823 - Twitter: @thommunist
+
+<hr style="margin: 20px 0;"/>
 
 My main tasks are the daily operations of Flame Software such as keeping an organised company structure with tools, planning and overseeing important company tasks, management of social media accounts, overseeing Flame's public appearance and client relations, and making sure documentation and reports about the company are in order. I will also work on Flame's code repositories and contribute code.
 
-## **Social Info:** <a name="Social Info"></a>
+</div>
 
-If you support our mission, come and follow us online!
+</div>
 
-\_\__website_     >>   <https://flamesoftware.net/>
+---
 
-\_\__blog_           >>   <https://flamesoftware.net/blog>
+# **Social Info** <a type=" name="Social Info"></a>
 
-\_\__twitter_       >>   <https://twitter.com/FlameCommsApp>
+<span class="links">
 
-\_\__github_        >>   <https://github.com/flame-software>
+[💻 Website](https://flamesoftware.net/)
+[📄 Blog](https://flamesoftware.net/blog)
+[🐦 Twitter](https://twitter.com/FlameCommsApp)
+[🐙 Github](https://github.com/flame-software)
+[📖 Facebook](https://facebook.com/profile.php?id=100086464458848)
+[🖼️ Instagram](https://instagram.com/flamesoftware)
+[👪 Discord](https://discord.gg/Z6qcNckczz)
 
-\_\__facebook_   >>   <https://facebook.com/profile.php?id=100086464458848>
-
-\_\__instagram_ >>   <https://instagram.com/flamesoftware>
-
-\_\__invite_         >>   <https://discord.gg/Z6qcNckczz>
-
-
-Please help us grow by bumping us on the following lists:
-
-Top.gg: <https://top.gg/servers/958803957621342258/vote>
-
-Discadia: <https://discadia.com/vote/flamesoftware/>
-
-Discords: <https://discords.com/servers/958803957621342258/upvote>
+</span>
