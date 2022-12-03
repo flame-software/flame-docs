@@ -27,39 +27,15 @@ Interested in our mission? <a href="/v0.1/company/whitepaper">Read our Whitepape
 
 # **Meet Flame's Team** <a name="Meet Flame's Team"></a>
 
-<div style="display: flex; flex-wrap: wrap; gap: 2em;">
-
-<img src="./assets/mid.jpg" style="width: 300px; height: 300px;" />
-
-<div >
-
 ## Pascal van Ginkel, Head of Technology
-### Discord: Mid#0001 - Twitter: @midblep
-
-<hr style="margin: 20px 0;"/>
+#### Discord: Mid#0001 - Twitter: @midblep
 
 Hey I'm Mid, Head of Technology at Flame. That means I am concerned with the technical structure of Flame Software and its products such as server architecture, tech stack, code conventions, pull requests, code reviews, protocol development, documentation, and developing Flame's codebases. I have nearly a decade of experience with web development and 4+ years of experience with chat-app related development.
 
-</div>
-
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 2em;">
-
-<img src="./assets/thom.png" style="width: 300px; height: 300px;" />
-
-<div>
-
 ## Thom Sandbrink, Head of Operations
-### Discord: Thommunist#7823 - Twitter: @thommunist
-
-<hr style="margin: 20px 0;"/>
+#### Discord: Thommunist#7823 - Twitter: @thommunist
 
 My main tasks are the daily operations of Flame Software such as keeping an organised company structure with tools, planning and overseeing important company tasks, management of social media accounts, overseeing Flame's public appearance and client relations, and making sure documentation and reports about the company are in order. I will also work on Flame's code repositories and contribute code.
-
-</div>
-
-</div>
 
 ---
 
