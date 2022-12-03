@@ -1,11 +1,8 @@
 <script lang="ts">
 	import DocSidebar from "$lib/sidebar/DocSidebar.svelte";
-	// import { currentpage } from "$lib/state/stores";
 
 	export let data: any;
 	let sidebardata: DocSidebarData = data.docsidebar;
-	// let page: DocPage = data.page;
-	// $currentpage = page;
 </script>
 
 <main

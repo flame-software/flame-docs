@@ -19,7 +19,7 @@ NOTE:
 
 <img src="./assets/whitepaper.jpg" />
 
-# {sections[1]} <a name="{sections[0]}"></a>
+# {sections[0]} <a name="{sections[0]}"></a>
 
 ---
 
