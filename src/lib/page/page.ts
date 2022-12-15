@@ -9,10 +9,8 @@ export async function loadPageData(
 ): Promise<DocPage> {
 	let post = null;
 	const url = `/${versionslug}/${categoryslug}/${slug}`;
-	const fileurl = path.resolve(
-		process.cwd(),
-		"docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md"
-	);
+	const fileurl =
+		"/docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md";
 
 	try {
 		post = await import(fileurl);
@@ -23,7 +21,7 @@ export async function loadPageData(
 
 	try {
 		const { title, sections, order, icon } = post.metadata;
-		const stats = await stat(fileurl);
+		// const stats = await stat(fileurl);
 
 		return {
 			title,
@@ -31,7 +29,7 @@ export async function loadPageData(
 			sections: sections ?? [],
 			order,
 			icon,
-			last_edited: stats.mtime.toDateString(),
+			last_edited: "today",
 			url,
 			urlname: slug,
 			file: slug + ".md",
