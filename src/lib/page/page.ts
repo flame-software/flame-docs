@@ -8,20 +8,22 @@ export async function loadPageData(
 	slug: string
 ): Promise<DocPage> {
 	let post = null;
+	let posts = null;
 	const url = `/${versionslug}/${categoryslug}/${slug}`;
 	const fileurl =
 		"/docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md";
 
 	try {
-		post = await import(fileurl);
+		posts = import.meta.glob("/docs/**/*.md");
 	} catch (e) {
 		throw error(404, e + " VIA IMPORT");
 	}
-	if (!post) throw error(404, "Not Found");
 
 	try {
+		post = await posts[fileurl]();
+		if (!post) throw error(404, "Not Found");
+
 		const { title, sections, order, icon } = post.metadata;
-		// const stats = await stat(fileurl);
 
 		return {
 			title,
@@ -38,7 +40,7 @@ export async function loadPageData(
 			category: categoryslug,
 		};
 	} catch (e) {
-		throw error(404, e + " VIA POST METADATA");
+		throw error(404, "File not found");
 	}
 }
 

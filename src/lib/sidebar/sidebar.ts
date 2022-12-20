@@ -88,39 +88,89 @@ async function orderPages(section: DocPage[]): Promise<DocPage[]> {
 
 export async function getSidebarData(version: string): Promise<DocSidebarData> {
 	let unsorted_sections: DocSidebarSection[] = [];
-	let directoryFiles;
+	let versionedFiles: { [key: string]: Function } = {};
+	let allDirectoryFiles = import.meta.glob("/docs/**/*.md");
 
-	directoryFiles = await getDirectories(
-		path.resolve(process.cwd(), "docs", version)
-	);
+	// filter based on version
+	for (const key in allDirectoryFiles) {
+		let keyparts = key.split("/");
+		if (keyparts[2] == version)
+			versionedFiles[key] = allDirectoryFiles[key];
+	}
 
-	for await (const folder of Object.entries(directoryFiles)) {
-		const allPostFiles = await getFiles(
-			path.resolve(process.cwd(), "docs", version, folder[1])
-		);
-		const allFilesCorrect: DocPage[] = [];
+	for (const [key, item] of Object.entries(versionedFiles)) {
+		let keyparts = key.split("/");
+		let categoryname = keyparts[3];
+		let filename = keyparts[keyparts.length - 1];
 
-		for (const page of Object.entries(allPostFiles)) {
-			const result: DocPage = await loadPageData(
-				version,
-				folder[1],
-				page[1].slice(0, -3)
-			);
-			allFilesCorrect.push(result);
-		}
-
-		let indexpage: DocPage | null = null;
-		for (const item of allFilesCorrect) {
-			if (item.file == "index.md") indexpage = item;
-		}
-
-		unsorted_sections.push({
-			name: folder[1],
-			order: indexpage ? indexpage.order : undefined,
-			icon: indexpage ? indexpage.icon : undefined,
-			url: indexpage ? indexpage.url : "",
-			pages: [...allFilesCorrect],
+		let category: DocSidebarSection | null = null;
+		unsorted_sections.forEach((element) => {
+			if (element.name == categoryname) category = element;
 		});
+
+		if (!category) {
+			let indexpath =
+				keyparts.slice(0, -1).toString().replaceAll(",", "/") +
+				"/index.md";
+			let index = await versionedFiles[indexpath]();
+			let indexpage: DocPage | null = null;
+
+			try {
+				const { title, sections, order, icon } = index.metadata;
+
+				indexpage = {
+					title,
+					content: index.default.render().html,
+					sections: sections ?? [],
+					order,
+					icon,
+					last_edited: "today",
+					url: `/${version}/${categoryname}`,
+					urlname: "index",
+					file: "index.md",
+					fileurl: indexpath,
+					github_url: `https://github.com/flame-software/flame-docs/tree/main/docs/${version}/${categoryname}/index.md`,
+					category: categoryname,
+				};
+			} catch (e) {
+				throw error(404, e + " VIA POST SIDEBAR");
+			}
+
+			category = {
+				name: categoryname,
+				order: indexpage ? indexpage.order : undefined,
+				icon: indexpage ? indexpage.icon : undefined,
+				url: indexpage ? indexpage.url : "",
+				pages: [],
+			};
+			unsorted_sections.push(category);
+		}
+
+		let page = await item();
+
+		try {
+			const { title, sections, order, icon } = page.metadata;
+
+			let pagedata: DocPage = {
+				title,
+				content: page.default.render().html,
+				sections: sections ?? [],
+				order,
+				icon,
+				last_edited: "today",
+				url: `/${version}/${categoryname}/${filename.slice(0, -3)}`,
+				urlname: filename.slice(0, -3),
+				file: filename,
+				fileurl: key,
+				github_url: `https://github.com/flame-software/flame-docs/tree/main/docs/${version}/${categoryname}/${filename}.md`,
+				category: categoryname,
+			};
+
+			category.pages.push(pagedata);
+		} catch (e) {
+			// just dont add
+			// throw error(404, e + " VIA POST SIDEBAR PAGE");
+		}
 	}
 
 	let ordered_sections: DocSidebarSection[] = await orderSections(
