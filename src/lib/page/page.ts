@@ -14,7 +14,7 @@ export async function loadPageData(
 		"/docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md";
 
 	try {
-		posts = import.meta.glob("/docs/**/*.*");
+		posts = import.meta.glob("/docs/**/*");
 	} catch (e) {
 		throw error(404, e + " VIA IMPORT");
 	}

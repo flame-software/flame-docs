@@ -10,7 +10,7 @@ icon: 📚
 
 ### The Flame documentation is the place to find all information about Flame and Flame Software. It does not only contain technical specifications for our product and protocols, but also explanations and introductions to Flame, roadmaps and plans, research conclusions, company information and everything else. You may fork this repository and PR us suggested changes on Github, or join our Discord server and talk with us if you have any questions.
 
-<img src="./assets/indexbanner.png" alt="Flame, where you have control" />
+<img src="/assets/indexbanner.png" alt="Flame, where you have control" />
 
 # {sections[1]} <a name="{sections[1]}"></a>
 
