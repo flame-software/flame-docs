@@ -6,4 +6,6 @@ sections:
 - Flame's policy and promise
 - Empowering user tools
 - Motivating third parties
+
+order: 2
 ---
