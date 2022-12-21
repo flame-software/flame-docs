@@ -126,8 +126,9 @@ Early on we realized how important it is to get this right the first time. Becau
 That is why we spent the past few months researching and validating our work and gathering a potential early community of people that share our vision and want to help us out.
 
 We have done this by making mockup designs, sharing information with our community about certain ideas, doing surveys and conducting interviews about our profit model and plans.
-
 We have also reached out to creators and influencers in our market to partner up and see how they can help promote our product.
+
+Our community has been growing and supporting us. They helped us create a unified appearance with our logo and gave us critical feedback.  We also have 6 people monetarily supporting us with a premium subscription managed through Discord called Nitro Boosting, and several more who have told us in interviews that they would be paying for our service. We are currently working on creating our Patreon so our community has more ways to monetarily support us.
 
 <span class="links">
 
@@ -140,6 +141,8 @@ We have also reached out to creators and influencers in our market to partner up
 <img src="/assets/mockup1.png" />
 
 ## Phases
+
+We hope to finalize our plan, find an ambassador from the community and grow our existing community during this Minor so that we are completely ready to start building Flame with a solid plan that has been reviewed through interviews by our community. The below phases are part of our longer plans beyond this Minor.
 
 ### Phase 1: (current, under 1 year)
 
@@ -159,12 +162,12 @@ We further diversify our revenue stream by adding another monetization business 
 
 ---
 
-# Profit model <a name="{sections[5]}"></a>
+# Business model <a name="{sections[5]}"></a>
 
 ## Premium
 
 The short-term goal is to break-even on a subscription model which will allow the user extra cosmetic features at a small monthly price. (between 5 and 10 euros / month)
-This is not our end goal and exists for our core community to support us while we are building the product.
+This is not our end goal and exists for our core community to support us while we are building the product. Since our costs at this stage are low, we are confident this will let us continue to develop with little worries.
 
 ## Marketplace
 
@@ -175,6 +178,11 @@ Flame will build a proprietary marketplace that anyone on the network may use to
 - Custom made emojis and stickers
 - Bots or automations that do certain complex tasks for you
 - Etc
+
+Analysing platforms with marketplaces it is clear that they are a profitable business:
+- App Store - 25 billion dollars in revenue 2017.
+- Play Store - 48 billion dollars in revenue 2021.
+- Steam Games Store - 8,7 billion dollars in revenue 2022.
 
 A percentage of each sale goes to Flame, and the user has value because they won't just be able to use these stickers and colors with us, but with anyone connected to the network.
 
@@ -206,6 +214,10 @@ My main tasks are the daily operations of Flame Software such as keeping an orga
 
 We are both software engineers who will develop the Flame network. Our community is free to help because Flame is transparent and operates with open-source code. We believe that with their help and just the two of us, we can build the network of the future in a fair way.
 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+---
+
 <img style="float: right; margin: 15px;" alt="Partners of Flame" src="/assets/partners.jpg">
 
 # Partners  <a name="{sections[8]}"></a>
@@ -225,9 +237,9 @@ In this table we have discovered our competitors. Each competitor has it's own s
 
 |     Name    |     Why                                           |     What are they offering                                          |     Active user base              |     Can we learn from them                                                                                    |     Seperate                                                        |
 |------------------------|------------------------------------------------------|-------------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-|     Telegram           |    Big Chat platform                            |     Alternitive for Whatsapp with more features       |     500.000.000                   |     Users want privacy                                                                             |     More privacy and no phone number needed                            |
-|     Discord            |     Relevent   featureset and markt category       |     Online   communities + gaming                     |     150.000.000                   |     Users want to pay for looks of their account                                           |     Server   on platform                                                    |
-|     Meta               |     WhatsApp +   Messenger + Instagram + Facebook    |     Standard internet communication  |     +2.000.000.000                |     Traditional chat app. Users use it because their friends use it    |     Many users and easy to use    |
+|     Telegram           |    Big Chat platform                            |     Alternative for Whatsapp with more features       |     500.000.000                   |     Users want privacy                                                                             |     More privacy and no phone number needed                            |
+|     Discord            |     Relevant   featureset and markt category       |     Online   communities + gaming                     |     150.000.000                   |     Users want to pay for looks of their account                                           |     Server   on platform                                                    |
+|     Meta               |     WhatsApp +   Messenger + Instagram + Facebook    |     Standard internet communication  |     +2.000.000.000                |     Traditional chat app. Users use it because their friends use it    |     A lot of users and easy to use    |
 
 </div>
 
@@ -249,7 +261,7 @@ At the moment we have no monthly expenses. But we also have no income. The only 
 
 # Accounting <a name="{sections[12]}"></a>
 
-For our accounting we use e-boekhouden. When we opend an bank account at the ING we got this as an gift. With this programm we can keep track of our transactions. This all will happen automaticly because eboekhouden is linked with our bank acount. In eboekhouden we can also make invoices. There we will keep them organized. At the moment there is not a lot to keep track of because we have nog finances yet.
+For our accounting we use e-boekhouden. When we opend an bank account at the ING we got this as an gift. With this programm we can keep track of our transactions. This all will happen automaticly because eboekhouden is linked with our bank acount. In eboekhouden we can also make invoices. There we will keep them organized. At the moment there is not a lot to keep track of because we have no finances yet.
 
 <br/><br/><br/><br/>
 
