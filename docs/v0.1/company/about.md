@@ -9,7 +9,7 @@ sections:
 order: 1
 ---
 
-<img src="./assets/logos.png" />
+<img src="/assets/logos.png" />
 
 # Flame is on a mission <a name="{sections[0]}"></a>
 

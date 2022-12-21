@@ -20,7 +20,7 @@ NOTE:
 ! Current revision: 0.2
 ```
 
-<img src="./assets/whitepaper.png" />
+<img src="/assets/whitepaper.png" />
 
 # Introduction <a name="{sections[0]}"></a>
 

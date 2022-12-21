@@ -34,7 +34,7 @@ We realized the internet was originally meant for computers to talk, not people,
 That is why Flame Software wants to create a product that understands the different needs of everyone, where you can create your own rules in a network that is shared, open and fair.
 Our vision is for our new and open network to become the new standard of how people communicate online.
 
-<img src="./assets/logos.png"/>
+<img src="/assets/logos.png"/>
 
 ---
 
@@ -69,9 +69,9 @@ Now look at the below diagram on the right. It is all of the same things but cal
 A message is any piece of information sent from one person to another. That information doesn't have to be text though, it can also be an image, a video, a voice call or anything else.
 Social medias just add a bunch of sugar on top of these messages to make it simple for you to use and call it things like a Tweet, a Post, a Gallery, a Group, etc
 
-<img src="./assets/pitchdeck1.png"/>
+<img src="/assets/pitchdeck1.png"/>
 
-<img src="./assets/pitchdeck3.png" align="right" width="500" style="padding: 10px;"/>
+<img src="/assets/pitchdeck3.png" align="right" width="500" style="padding: 10px;"/>
 
 <br/>
 
@@ -105,7 +105,7 @@ A car focused place has things to sell and buy like Marketplaces. A place for ga
 
 While giving people the power to make their own rules is cool, it still creates divide. For example: People can join Car Central and be left dissatisfied. Then they make their own place, let's call it Car Empire. But now, nobody is using Car Empire and they still have to convince people to make *yet another account*. This problem of not being connected will be solved by Flame too.
 
-<img src="./assets/pitchdeck2.png" width="800" />
+<img src="/assets/pitchdeck2.png" width="800" />
 
 In the previous diagram we can see everything still translates back into simple messages. Because everyone is part of the network and because things so similar, we can actually connect these places!
 
@@ -116,7 +116,7 @@ This kind of network opens up a lot of more advanced future possibilities such a
 
 And it is why we believe a connected network under a common understanding like this is the best way to make the internet friendlier for humans to communicate.
 
-<img src="./assets/pitchdeck4.png" width="800" />
+<img src="/assets/pitchdeck4.png" width="800" />
 
 ---
 
@@ -137,7 +137,7 @@ We have also reached out to creators and influencers in our market to partner up
 
 </span>
 
-<img src="./assets/mockup1.png" />
+<img src="/assets/mockup1.png" />
 
 ## Phases
 

@@ -1,5 +1,7 @@
 import { error } from "@sveltejs/kit";
+
 import { stat } from "fs/promises";
+
 import path from "path";
 
 export async function loadPageData(
@@ -14,7 +16,7 @@ export async function loadPageData(
 		"/docs/" + versionslug + "/" + categoryslug + "/" + slug + ".md";
 
 	try {
-		posts = import.meta.glob("/docs/**/*.md");
+		posts = import.meta.glob("/docs/**/*");
 	} catch (e) {
 		throw error(404, e + " VIA IMPORT");
 	}
