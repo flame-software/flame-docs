@@ -11,7 +11,7 @@ sections:
 - A permanent network
 - Conclusion
 
-order: 3
+order: 2
 ---
 
 ```js

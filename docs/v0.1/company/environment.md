@@ -7,5 +7,5 @@ sections:
 - Empowering user tools
 - Motivating third parties
 
-order: 2
+order: 3
 ---
