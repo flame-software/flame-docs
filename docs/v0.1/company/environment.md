@@ -4,6 +4,7 @@ sections:
 - What is the problem?
 - Flame's policy and promise
 - Motivating third parties
+order: 3
 ---
 
 # What is the problem? <a name="{sections[0]}"></a>
@@ -13,7 +14,7 @@ Before we van do something about the problem, we need to know it. So what's the 
 
 <br>
 
-<img src="./assets/renewable.jpg" alt="Picture of renable energy">
+<img src="/assets/renewable.jpg" alt="Picture of renable energy">
 
 <br>
 
@@ -25,7 +26,7 @@ So the problem is that the data center's energy consumption has only grown since
 We as Flame can make an impact by use only renewable energy. Our server is only powered by solar panels, so the server is 100% powered by renewable energy. Beside that our server, our computers are also powered by 100% renewable energy. This means that we can develop Flame and host Flame with pure green energy and zero gray energy.
 Besides our computer's and server, the founders of Flame travel by bike, electric vehicle's or with an electric train. In the Netherlands, trains run on 100% green energy. <a href="https://www.ns.nl/en/about-ns/sustainability/climate-neutral/green-energy-for-train-bus-and-station.html">NS sustainability.</a> So when we go to college or go to a customer for a meaning, we do not emit carbon dioxide.
 
-<img src="./assets/groenetrein.jpg" alt="Green Train">
+<img src="/assets/groenetrein.jpg" alt="Green Train">
 We can promise our supporters that we will stay a 100% carbon dioxide neutral company and will do our best to save the planet. We want to connect the world with Flame, and we believe that it will help to save earth against climate change.
 
 <br>

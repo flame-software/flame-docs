@@ -5,6 +5,7 @@ sections:
 - Where to start
 - Meet Flame's Team
 - Social Info
+order: 1
 ---
 
 <img src="/assets/logos.png" />
