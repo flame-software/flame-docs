@@ -5,7 +5,6 @@ sections:
 - Where to start
 - Meet Flame's Team
 - Social Info
-
 order: 1
 ---
 

@@ -1,9 +1,5 @@
 import { error } from "@sveltejs/kit";
 
-import { stat } from "fs/promises";
-
-import path from "path";
-
 export async function loadPageData(
 	versionslug: string,
 	categoryslug: string,
