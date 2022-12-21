@@ -23,14 +23,14 @@ hr {
 }
 
 li::marker {
-    content: "👉";
-    color: black;
+    content: "-";
+    color: black !important;
     font-weight: bold;
 }
 
 .dark li::marker {
-    content: "👉";
-    color: white;
+    content: "-";
+    color: white !important;
     font-weight: bold;
 }
 
