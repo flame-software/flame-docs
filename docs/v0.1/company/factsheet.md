@@ -1,1 +1,0 @@
-We have contacted .. influencers and are in talks and they have in total .. subs.
