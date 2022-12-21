@@ -200,13 +200,13 @@ My main tasks are the daily operations of Flame Software such as keeping an orga
 
 ---
 
-<img style="float: right; margin: 15px;" alt="Partners of Flame" src="../company/assets/community.jpg">
+<img style="float: right; margin: 15px;" alt="Partners of Flame" src="/assets/community.jpg">
 
 # Tasks  <a name="{sections[7]}"></a>
 
 We are both software engineers who will develop the Flame network. Our community is free to help because Flame is transparent and operates with open-source code. We believe that with their help and just the two of us, we can build the network of the future in a fair way.
 
-<img style="float: right; margin: 15px;" alt="Partners of Flame" src="../company/assets/partners.jpg">
+<img style="float: right; margin: 15px;" alt="Partners of Flame" src="/assets/partners.jpg">
 
 # Partners  <a name="{sections[8]}"></a>
 
@@ -245,7 +245,7 @@ At the moment we have no monthly expenses. But we also have no income. The only 
 
 ---
 
-<img style="float: right; margin: 5px;" width=500 src="../company/assets/eboekhouden.jpg">
+<img style="float: right; margin: 5px;" width=500 src="/assets/eboekhouden.jpg">
 
 # Accounting <a name="{sections[12]}"></a>
 
