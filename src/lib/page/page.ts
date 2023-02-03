@@ -29,7 +29,7 @@ export async function loadPageData(
 			sections: sections ?? [],
 			order,
 			icon,
-			last_edited: "today",
+			last_edited: "unknown",
 			url,
 			urlname: slug,
 			file: slug + ".md",

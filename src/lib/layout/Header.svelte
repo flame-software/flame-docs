@@ -16,7 +16,6 @@
 			<span
 				class="py-2 px-4 flex lg:items-center flex-col lg:flex-row gap-0 lg:gap-2"
 				>Documentation
-				<span class="text-gray-400">v0.1</span>
 			</span>
 		</div>
 
