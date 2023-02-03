@@ -1,5 +1,5 @@
 ---
-title: Flame ❤ the environment
+title: 🌿 Flame ❤ sustainability
 sections:
 - What is the problem?
 - Flame's policy and promise

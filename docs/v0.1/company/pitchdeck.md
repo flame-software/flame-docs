@@ -1,29 +1,3 @@
----
-title: Flame Pitchdeck
-sections:
-- Introduction
-- Who are our customers
-- The problem
-- The solution
-- How far are we?
-- Team
-- Tasks
-- Partners
-- Competitors
-- Why is Flame different
-- Budget
-- Accounting
-- What do we need?
-- Why would you invest?
-order: 4
----
-
-```js
-NOTE FOR PUBLIC READERS:
-! This pitchdeck was made as part of the Minor our founders contribute in.
-! It is a slim version of our Whitepaper which will release soon.
-```
-
 ## Introduction <a name="{sections[0]}"></a>
 
 Flame Software is a company built by two IT students. We grew up around the internet and are invested in it and its health.
