@@ -8,25 +8,26 @@ sections:
 order: 1
 ---
 
-<img src="/assets/logos.png" />
+<img src="/assets/whitepaper.jpg" />
 
 # Flame is on a mission <a name="{sections[0]}"></a>
 
 Flame Software VOF is a Dutch registered company founded in 2022 by two Computer Engineering students with the vision to revolutionize online communications.
 
-We believe the open mindset of technologies like Email, IRC and RSS need a return. They shaped the internet, and made it a world of the free. But big tech like Discord, Google and Facebook are privatising our beautiful world-wide network of human communication, forcing their hand on what you're allowed to do.
+We believe the open mindset of technologies like Email, IRC and RSS need a return. They shaped the internet and made it a world where anyone can achieve anything. But the new era of tech and wacky new startups have produced products like Discord and Whatsapp that have repeatedly limited our world-wide network of human communication, forcing their hand on what you're allowed to do after the example of Apple.
 
-We dream of an internet where people have the freedom to make their own independent decisions without the risk of losing their ability to contact everyone who is important to them. An internet where you have the control to make it *your* internet.
+Flame dreams of an internet where the freedom of technologies like Mastodon's ActivityPub shine in all areas, not just Twitter clones. An internet where you have the control to make it *your* internet.
 
 ---
 
 # Where to start <a name="Where to start"></a>
 
-Interested in our mission? <a href="/v0.1/company/whitepaper">Read our Whitepaper</a> containing our solution and plan on how we will carry it out. You can also come and <a href="https://discord.gg/Z6qcNckczz">join our Discord server</a> where you will be notified of updates.
-
+Currently Flame is in its alpha development stage. You can join our journey by visiting us on Discord or Telegram. Our whitepaper is still in the works, and we will outline more of our plans as development continues. Meanwhile, take a peek at the "Features" tab to see some previews of things we're planning on doing!
 ---
 
 # **Meet Flame's Team** <a name="Meet Flame's Team"></a>
+
+<img src="/assets/logos.png" />
 
 ## Pascal van Ginkel, Head of Technology
 #### Discord: Mid#0001 - Twitter: @midblep

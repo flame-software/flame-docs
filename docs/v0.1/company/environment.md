@@ -1,11 +1,11 @@
----
+<!-- ---
 title: 🌿 Flame ❤ sustainability
 sections:
 - What is the problem?
 - Flame's policy and promise
 - Motivating third parties
 order: 3
----
+--- -->
 
 # What is the problem? <a name="{sections[0]}"></a>
 In the modern world, we have many differences, but we can all agree on 1 thing. Climate change is happening, and we need to do something. We need to take care of our little planet before it is too late. Flame wants to take care of the environment by reducing our pollution to 0%. But how can we achieve this, I can hear you thinking. That's where this little article comes in. What can we, as Flame, do for our planet?
