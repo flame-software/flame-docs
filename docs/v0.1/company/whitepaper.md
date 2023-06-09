@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 📃 Flame Whitepaper
 sections:
 - Introduction
@@ -12,19 +12,26 @@ sections:
 - Conclusion
 
 order: 2
----
+--- -->
+
+<img src="/assets/whitepaper.jpg" />
 
 ```js
-NOTE:
-! This whitepaper is not finished.
-! Current revision: 0.2
+# NOTE:
+> This whitepaper is continuously evolving as our missiong progresses
+> and our understanding of how to create a better future changes with it.
 ```
 
-<img src="/assets/whitepaper.png" />
+<br/>
 
 # Introduction <a name="{sections[0]}"></a>
 
-In the modern times we are used to subpar experiences online. Stuff that doesn't work well together, or doesn't even work at all. Everyone is building their own wheel, wouldn't it make way more sense to have a blueprint? That is what our paper aims to look at, present the market, the problem, and then the best solution to it and how it might be done in the real world.
+"Creating a free and open future", where free means free as in speech, not beer.
+You might've heard that phrase before in the open-source world, but if you're a little less technically inclined it might raise an eyebrow. Despite what it may sound like it doesn't actually refer to creating something that allows anyone to say what they want, like some other social platforms intend to do. It refers to allowing anyone to *make* what they want, most commonly in the form of a permissive software license. But what does that mean then?
+
+At Flame it is our mission in everything that we do is to give our users control. Our motto "where you have control", stems to this ability to create whatever you want with the standard we have made. But how did we get there, and why is something like this needed?
+
+In this whitepaper we'll be answering that and outlining how to get there.
 
 ---
 
